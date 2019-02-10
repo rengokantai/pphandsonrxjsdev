@@ -51,3 +51,18 @@ let {interval,range,timer,of,from,defer}=Rx;
 ##### Cold Observables
 - Observables sequence only starts pushing values to the observers when
 subscribe is called cold observbles
+- Hot Observables are already producing values even before a subscription is active
+
+
+##### Ben Lesh Def
+- COLD is when your observable creates the producer
+```
+var cold = new Observable((observer)=>{
+  var producer = new Producer();
+})
+```
+- HOT is when your observable closes over the producer
+```
+var producer = new Producer();
+var hot = new Observable((observer)=>{});
+```
