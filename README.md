@@ -11,9 +11,13 @@ Observables are lazy push collections of multiple values
   pull|Function|Iterator
   Push|Promise|Observable
 
-Observables are collections of Future values
+##### Observables are collections of Future values
 Array
 ```
 [1,2,3].map(console.log) //instant values
 [1,2,3].pipe(map(console.log))//overtime
 ```
+##### Important Things to Remember
+- Observables use lazy evaluation - they don't run until subscribed
+- onNext onError onComplete
+- __If sequence throw error - it completes and produce no more values__
