@@ -31,3 +31,16 @@ of
 from
 - convert some other object or data srtucture into an Observable
 - Observable promise array
+
+
+##### Importing ES6
+```
+import {Observable} from 'rxjs/Observable';
+import {defer} from 'rxjs/observable/defer';
+```
+
+##### Importing Vanilla
+```
+let Observable = Rx.Observable;
+let {interval,range,timer,of,from,defer}=Rx;
+```
