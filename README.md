@@ -66,3 +66,10 @@ var cold = new Observable((observer)=>{
 var producer = new Producer();
 var hot = new Observable((observer)=>{});
 ```
+
+
+##### HOT Observable diagram
+```
+source$ = interval(1000).pipe(publish())
+source$.connect()
+```
