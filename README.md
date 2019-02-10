@@ -21,3 +21,13 @@ Array
 - Observables use lazy evaluation - they don't run until subscribed
 - onNext onError onComplete
 - __If sequence throw error - it completes and produce no more values__
+
+
+##### of from fromEvent
+of
+- converts the arguments to an observable sequence
+- Each argument becomes a next notification
+- of(param1,param2, scheduler)
+from
+- convert some other object or data srtucture into an Observable
+- Observable promise array
