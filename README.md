@@ -10,3 +10,10 @@ Observables are lazy push collections of multiple values
   ---|---|---
   pull|Function|Iterator
   Push|Promise|Observable
+
+Observables are collections of Future values
+Array
+```
+[1,2,3].map(console.log) //instant values
+[1,2,3].pipe(map(console.log))//overtime
+```
