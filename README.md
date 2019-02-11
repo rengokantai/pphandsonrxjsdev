@@ -73,3 +73,18 @@ var hot = new Observable((observer)=>{});
 source$ = interval(1000).pipe(publish())
 source$.connect()
 ```
+
+
+## 3. Working with Operators for Stream Data Processing
+### 1 Working with Pipe-able Operators to Decrease App Bundle Size
+##### Tree Shaking
+Tree Shaking is a process of removing the code that was imparted but not used in application
+
+
+
+
+
+
+
+
+
